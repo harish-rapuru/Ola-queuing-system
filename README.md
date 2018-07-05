@@ -6,7 +6,7 @@ Application Info:
 
 * System dependencies: Linux
 
-*Remote URL: http://01c213e2.ngrok.io/rides
+*Remote URL: http://localhost:3000/rides
 
 * Database creation: rake db:create then rake db:migrate
 
@@ -20,11 +20,11 @@ Application Info:
 1. A Driver model for storing driver name and ID
 2. A Customer model for storing customer name and ID
 3. A Rides model that will have driver id info , for associating driver to a ride and customer id info for associating cutomer to ride.
-4. One can start the app by adding customers to app by: http://01c213e2.ngrok.io/customers/new 
-5. Then go to http://01c213e2.ngrok.io/rides to check the dashboard
-6. Go to http://01c213e2.ngrok.io/drivers/new to create a driver entry 
-7. Go to http://01c213e2.ngrok.io/drivers/1  for selecting drivers and starting his rides
-8. Go to http://01c213e2.ngrok.io/rides/new to create a new ride for chosen customer
+4. One can start the app by adding customers to app by: http://localhost:3000/customers/new 
+5. Then go to http://localhost:3000/rides to check the dashboard
+6. Go to http://localhost:3000/drivers/new to create a driver entry 
+7. Go to http://localhost:3000/drivers/1  for selecting drivers and starting his rides
+8. Go to http://localhost:3000/rides/new to create a new ride for chosen customer
 9. Select a driver and choose his ride , one can see the waiting status of ride change to ongoing once selection is made.
 10. A sidekiq worker queue is enabled to handle completion of ride after 5 minutes.
 
